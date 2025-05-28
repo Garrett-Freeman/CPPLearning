@@ -4,6 +4,9 @@
 #include <iostream>
 #include <array> // Include the header for std::array
 
+// namespace declarations
+using namespace std;
+
 // Function declarations
 // Task 1
 int sum(int a, int b);
@@ -12,6 +15,7 @@ int product(int a, int b);
 int average(int a, int b);
 int printOneToOneHundred();
 int getTopThreeIntegers(int arr[], int size, int topThree[]);
+int memoryManagement(); // Function for memory management demonstration
 
 // Task 2
 
@@ -84,4 +88,19 @@ int getTopThreeIntegers(int arr[], int size, int topThree[]) {
     std::cout << "Third: " << topThree[2] << "\n";
 
     return 0;
+}
+
+int memoryManagement() {
+  int myInt;
+  float myFloat;
+  double myDouble;
+  char myChar;
+
+  cout << sizeof(myInt) << "\n";     // 4 bytes (typically)
+  cout << sizeof(myFloat) << "\n";   // 4 bytes
+  cout << sizeof(myDouble) << "\n";  // 8 bytes
+  cout << sizeof(myChar) << "\n";    // 1 byte
+
+  return 0;
+
 }
